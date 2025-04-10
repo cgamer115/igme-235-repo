@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Amiibo Finder</title>
+     <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+     <link rel="stylesheet" href="css/amiibo.css">
+     <script src="amiibo.js"></script>
+</head>
+<body>
+<header>
+ <h1>
+    <div class="logo">
+        <div class="logoimg">
+            <img src="images/mario-amiibo.webp" alt="Mario Amiibo">
+        </div>
+        <div class="logoimg">
+            <img src="images/Amiibo_logo - Copy.png" alt="Amiibo logo">
+        </div>
+        <div class="logoimg">
+            <img src="images/luigi-amiibo.webp" alt="Luigi Amiibo">
+        </div>
+    </div>
+ </h1>
+</header>
+<h1>
+    <p>Welcome to the Amiibo Finder!!! Type a character name into the search bar to find Amiibo of that character</p>
+    <p>If you don't know what to search for, just leave the search bar empty to take a look what Amiibo Nintendo has</p>
+    <a href="documentation.html">Click here for the documentation</a>
+</h1>
+<main>
+    <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="mario" placeholder="Search Here"/>
+    <button type="button" id="search" class="buttons">Let's go find some Amiibo</button>
+    <p>
+        <h1>
+            Limit:
+            <select id="limit">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="all">All</option>
+            </select>
+        </h1>
+    </p>
+    <p><button type="button" id="history" class="buttons">Recent Searches</button>
+    </p>
+    <p id="debug"></p>
+    <hr>
+</main>
+<h2>
+    <div id="status">
+        Results will go here<br>
+    </div>
+</h2>
+ <div id="results">
+ <br>
+ </div>
+ <div id="content">
+ <br>
+ </div>
+</body>
+</html>

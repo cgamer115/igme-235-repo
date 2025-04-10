@@ -1,0 +1,68 @@
+main{
+    text-align: center;
+}
+
+h1{
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 40px;
+}
+
+.logo{
+    display: flex;
+}
+
+.logoimg{
+    margin: 0 auto;
+}
+
+.buttons{
+    
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 35px;
+    height: 70px;
+    margin: 0, auto;
+}
+
+header img{
+    width: 100%;
+    height: 400px;
+}
+
+#limit{
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 35px;
+    height: 70px;
+    margin: 0, auto;
+    text-align: center;
+}
+
+#results{
+    font-family: 'New Super Mario Font U', sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    text-align: center;
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 30px;
+}
+
+#searchterm{
+    height: 50px;
+    font-family: 'New Super Mario Font U', sans-serif;
+    font-size: 25px;
+}
+
+#content img{
+    width: 50%;
+}
