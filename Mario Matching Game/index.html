@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Mario Matching Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+  <link rel="stylesheet" href="css/chibigame.css" />
+  <script src="js/classes.js"></script>
+  <script src="js/chibigame.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>
+      Welcome to Mario Matching<br>
+      Match all the cards to reach the next level<br>
+      If the timer runs out or you lose all your lives, it's game over
+    </h1>
+    <h2></h2>
+  </header>
+  <section id="game">
+    <div id="timer">
+      
+    </div>
+    <div id="clicks">
+      Clicks: 0
+    </div>
+    <div id="score">
+      Score: 0
+    </div>
+    <div id="highscore">
+      Highscore: 0000
+    </div>
+    <div id="cards">
+    </div> <!-- #cards -->
+    <div class="cardtemplate">
+      <div class="face front"></div>
+      <div class="face back"></div>
+    </div> <!-- .card -->
+    <div id="lives">
+      <img src="images/heart.webp">
+      <img src="images/heart.webp">
+      <img src="images/heart.webp">
+      <img src="images/heart.webp">
+    </div>
+  </section> <!-- #game -->
+
+
+  <footer>
+    <p>This was not made by Nintendo. Please don't sue me!</p>
+  </footer>
+
+</body>
+</html>
