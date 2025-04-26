@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <title>Mario Matching Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+  <link rel="stylesheet" href="css/mario-matching.css" />
+  <script src="js/classes.js"></script>
+  <script src="js/mario-matching.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>
+      Mario Matching Game<br>
+      The game where you must match items from different Mario Games<br>
+      Good Luck and Have Fun!!!
+    </h1>
+    <h2></h2>
+  </header>
+  <section id="game">
+    <div id="timer">
+    </div>
+    <div id="clicks">
+    </div>
+    <div id="score">
+    </div>
+    <div id="highscore">
+    </div>
+    <div id="cards">
+      Welcome to Mario Matching
+      <p>You must correctly match the cards with their respective pair.</p>
+      If you run out of lives, or the timer runs out, it's game over
+    </div> <!-- #cards -->
+    <div id="button">
+      <button type="button" onclick="startButtonClicked()">Let's-A-Go!!!!</button>
+    </div>
+    <div class="cardtemplate">
+      <div class="face front"></div>
+      <div class="face back"></div>
+    </div> <!-- .card -->
+    <div id="lives">
+    </div>
+    <div id="level">
+      
+    </div>
+  </section> <!-- #game -->
+
+
+  <footer>
+    <p>This was not made by Nintendo. Please don't sue me!</p>
+  </footer>
+
+</body>
+</html>

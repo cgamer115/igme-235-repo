@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Starting off with this assignment, I decided to use the chibi matching game starter code and enhance the experience.
+        I began with editing the current cards spritesheet and changing them to something more to my liking. In this case it was a bunch of items from Mario games.
+        After the new spritesheet was properly implemented, I worked on a lives system, which will take a life away from the player each time they get a match wrong. At first,
+        the lives counter was set at three, but then changed to four, as three lives made it too difficult, while four lives is just enough to get through the game, although some luck was needed.
+        I then started focusing on making a timer for the game. This took me a little bit, as I wasn't fully familiarised with timers yet.
+        Eventually I got it figured out, but then later on had to take it out of utilities and into the main js file to use it's full potential. I then decided to go with an opponent ES6 class,
+        which will call a random event after each game that could benefit the player in different ways, such as adding to the base score, or multiplying their current score altogether.
+        I also added some new decks, which had a new set of cards from the spritesheet, that would be used in a potential leveling system. I had then modified initBoard to take a parameter so that I could change out
+        the different decks. I then cleaned out some errors tied with the timer, then added some images to the timer, which shows a super mushroom slowing turning into a poison mushroom as the timer gets closer to running out.
+        I then worked on the leveling system, which required modifying the initBoard function, as well as the card class in the HTML. I eventually made it so that the game has three levels and will end the game once the player
+        runs out of lives, or they finish level 3. I then modified the decreaseLives function to make it more simple and not using multiple if/else statements. In this case, I added new variables to store the initial state of #lives,
+        and modify it as the game went on. I then finished up the Opponent class to be able to call randomEvent() to either add, subtract, or multiply the player's score after each level. I also added a 5th life to the game to make it
+        more fair.
+
+    </h1>
+</body>
+</html>
