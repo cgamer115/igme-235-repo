@@ -1,0 +1,22 @@
+button{
+    width: 150px;
+    height: 50px;
+    font-size: 14pt;
+}
+
+label{
+    font-size: 20pt;
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        font-family: 'New Super Mario Font U', sans-serif;
+        background-color: red;
+        padding: 100px
+    }
+
+    #input-firstname, #input-lastname{
+        font-family: 'New Super Mario Font U', sans-serif;
+    }
+}

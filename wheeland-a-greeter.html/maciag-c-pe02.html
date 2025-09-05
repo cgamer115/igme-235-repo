@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="greeter.css">
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Greeter</title>
+  <style>
+    * {
+      font-size: 1.5em;
+    }
+  </style>
+  <script>
+    "use strict";
+    let a = 10;
+    // 1 - get a reference to the button
+    // 2 - add a click event to button that calls a `sayHello` function
+    // 3 - create a `sayHello()` function
+    // 3A - get name of person from the <input>
+    // 3B - get a reference to the #output <p>
+    // 3C - update HTML of #output <p>
+    window.onload = () => init();
+
+
+    const greet = (greeting) =>{
+      let firstName = document.querySelector("#input-firstname").value;
+      let lastName = document.querySelector("#input-lastname").value;
+      if (!firstName){
+        firstName = "Peter";
+      }
+      if (!lastName){
+        lastName = "Cookie";
+      }
+      document.querySelector("#output").innerHTML = greeting + " " + firstName + " " + lastName;
+      shoutify();
+    }
+
+    const shoutify = () =>{
+      let isShouting = document.querySelector("#shoutify").checked;
+      if (isShouting){
+        let outputElement = document.querySelector("#output");
+        outputElement.innerHTML = outputElement.innerHTML.toUpperCase();
+      }
+    }
+
+    const init = () =>{
+      const $helloButton = document.querySelector("#btn-hello");
+      $helloButton.onclick = () => greet("Hello");
+      const $goodByeButton = document.querySelector("#btn-goodbye");
+      $goodByeButton.onclick = () => greet("GoodBye");
+      document.querySelector("#output").style.color = "red";
+      document.querySelector("#output").style.backgroundColor = "yellow";
+    }
+
+  </script>
+</head>
+
+<body>
+  <button id="btn-hello">Say Hello</button> <button id="btn-goodbye">Say GoodBye</button>
+  <input type="checkbox" id="shoutify"><label for="shoutify">Shoutify!</label>
+  <p>
+  <input id="input-firstname" placeholder="Type in your name">
+  <input id="input-lastname" placeholder="Type in your name">
+  </p>
+  <p id="output">???</p>
+</body>
+
+</html>
